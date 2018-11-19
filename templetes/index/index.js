@@ -5,14 +5,22 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    names:"mfleung"
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function () {
-    
+    wx.setTabBarBadge({
+      index: 0,
+      text: '',
+      success: function(res) {
+        console.info(res)
+      },
+      fail: function(res) {},
+      complete: function(res) {},
+    })
   },
 
   /**
